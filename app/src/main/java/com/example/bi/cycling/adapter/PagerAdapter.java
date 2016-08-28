@@ -20,6 +20,10 @@ public class PagerAdapter extends FragmentPagerAdapter {
     public PagerAdapter(FragmentManager fm){
         super(fm);
     }
+    //Get activity from MainActivity
+    public void setForActivity(Activity activity) {
+        this.activity = activity;
+    }
     @Override
     public int getCount() {
         return 0;
