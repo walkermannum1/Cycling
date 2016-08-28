@@ -24,6 +24,8 @@ public class PagerAdapter extends FragmentPagerAdapter {
     public void setForActivity(Activity activity) {
         this.activity = activity;
     }
+
+
     @Override
     public int getCount() {
         return 0;
