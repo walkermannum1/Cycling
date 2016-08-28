@@ -1,6 +1,7 @@
 package com.example.bi.cycling.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -9,6 +10,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.example.bi.cycling.R;
 
@@ -71,5 +74,38 @@ public class PagerAdapter extends FragmentPagerAdapter {
             } else {
                 return showImages(inflater);
             }
+    }
+
+        //set baseIndex
+        public int getBaseIndex() {
+            return mBaseIndex;
+        }
+
+        public View initForButton(LayoutInflater inflater) {
+
+            View view = inflater.inflate(R.layout.item_two, null);
+
+            Button button = (Button) view.findViewById(R.id.button);
+            button.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(activity, SecondActivity.class);
+                    startActivity(intent);
+                    activity.finish();
+                }
+
+            });
+            return view;
+        }
+
+        public View showImages(LayoutInflater inflater) {
+            View view = inflater.inflate(R.layout.item_one, null);
+            ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
+            imageView.setImageResource(IMAGES[getBaseIndex()]);
+            imageView.setScaleType(ImageView.ScaleType.FIT_XY);
+
+            return view;
+        }
     }
 }
