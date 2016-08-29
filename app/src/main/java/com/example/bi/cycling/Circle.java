@@ -4,11 +4,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.v4.view.PagerAdapter;
 import android.util.AttributeSet;
 import android.view.View;
-
-import java.text.AttributedCharacterIterator;
 
 /**
  * Created by user on 2016/8/29.
@@ -17,7 +14,7 @@ public class Circle extends View {
 
     private Paint paint;
     private int radius = 16;
-    private int count = PagerAdapter.sum;
+    private int count = com.example.bi.cycling.PagerAdapter.sum;
     private int choosePosition = 0;
     private int gap = 70;
 
