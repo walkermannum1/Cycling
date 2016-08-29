@@ -8,7 +8,7 @@
         android:id="@+id/imageView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/t5"
+        android:src="@drawable/q5"
         android:layout_alignParentEnd="false" />
 
     <Button

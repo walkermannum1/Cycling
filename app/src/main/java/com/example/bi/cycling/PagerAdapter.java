@@ -18,7 +18,7 @@ import android.widget.ImageView;
 public class PagerAdapter extends FragmentPagerAdapter {
 
     private static Activity activity;
-    private static final int[] IMAGES = {R.drawable.t1, R.drawable.t2, R.drawable.t3, R.drawable.t4, R.drawable.t5};
+    private static final int[] IMAGES = {R.drawable.q1, R.drawable.q2, R.drawable.q3, R.drawable.q4, R.drawable.q5};
     public static int sum = IMAGES.length;
 
     public PagerAdapter(FragmentManager fm){
