@@ -12,15 +12,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.example.bi.cycling.R;
-
 /**
  * Created by guang on 2016/8/28.
  */
 public class PagerAdapter extends FragmentPagerAdapter {
 
     private static Activity activity;
-    private static final int[] IMAGES = {R.drawable.T1, R.drawable.T2, R.drawable.T3, R.drawable.T4, R.drawable.T5};
+    private static final int[] IMAGES = {R.drawable.t1, R.drawable.t2, R.drawable.t3, R.drawable.t4, R.drawable.t5};
     public static int sum = IMAGES.length;
 
     public PagerAdapter(FragmentManager fm){
