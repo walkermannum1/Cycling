@@ -57,6 +57,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
             return fragment;
         }
 
+
         public MyFragment() {
             super();
         }
@@ -77,6 +78,11 @@ public class PagerAdapter extends FragmentPagerAdapter {
     }
 
         //set baseIndex
+
+        private void setBaseIndex(int index) {
+            mBaseIndex = index;
+        }
+
         public int getBaseIndex() {
             return mBaseIndex;
         }
