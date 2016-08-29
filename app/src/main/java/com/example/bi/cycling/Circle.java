@@ -1,4 +1,4 @@
-package com.example.bi.cycling.adapter;
+package com.example.bi.cycling;
 
 import android.content.Context;
 import android.graphics.Canvas;
