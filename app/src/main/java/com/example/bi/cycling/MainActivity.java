@@ -3,7 +3,6 @@ package com.example.bi.cycling;
 import android.support.v4.app.FragmentActivity;
 
 import com.example.bi.cycling.utils.Words;
-import com.example.bi.cycling.PagerAdapter;
 
 import android.app.Activity;
 import android.content.Intent;

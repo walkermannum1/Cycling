@@ -3,7 +3,11 @@ package com.example.bi.cycling;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.view.*;
+import android.support.v4.view.PagerAdapter;
+import android.support.v7.app.ActionBar;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.TextView;
 
 /**
@@ -11,16 +15,36 @@ import android.widget.TextView;
  */
 public class SecondActivity extends Activity {
 
+    private ViewPager mViewPager;
+
+    private NavigationTab mNavigationTab;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        TextView textView = new TextView(this);
-        textView.setText("Welcome coming!");
-        textView.setTextSize(28);
-        textView.setTextColor(Color.BLUE);
-        textView.setGravity(Gravity.CENTER);
+        initUI();
+        setUI();
+    }
 
-        setContentView(textView);
+
+    private void initUI() {
+        mViewPager = (ViewPager) findViewById(R.id.vp);
+        mNavigationTab = (NavigationTab) findViewById(R.id.ngt);
+    }
+    private void setUI() {
+        mViewPager.setAdapter(new PagerAdapter() {
+            @Override
+            public int getCount() {
+                return 0;
+            }
+
+            @Override
+            public boolean isViewFromObject(View view, Object object) {
+                return false;
+            }
+        });
     }
 }
