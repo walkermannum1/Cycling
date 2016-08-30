@@ -6,6 +6,7 @@ import android.support.v4.view.*;
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 
+import com.example.bi.navigationtab;
 
 /**
  * Created by user on 2016/8/29.
