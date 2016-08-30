@@ -1,14 +1,11 @@
 package com.example.bi.cycling;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.*;
 import android.support.v4.view.PagerAdapter;
-import android.support.v7.app.ActionBar;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.TextView;
+
 
 /**
  * Created by user on 2016/8/29.
